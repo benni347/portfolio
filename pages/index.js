@@ -17,6 +17,14 @@ import Paragraph from '../components/paragraph'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Layout from '../components/layouts/article'
 import { BioSection, BioYear} from '../components/bio'
+import { GridItem } from '../components/grid-item'
+import {
+  IoLogoTwitter,
+  IoLogoGithub,
+  IoLogoDiscord,
+  IoMailSharp
+} from 'react-icons/io5'
+
 
 const Page = () => {
   return ( 
@@ -88,6 +96,42 @@ const Page = () => {
           <Paragraph>
             Mathematics, Physic, Chemestry, Programming, Biking, Machine Learning, Learning new stuff
           </Paragraph>
+        </Section>
+
+        <Section delay={0.4}>
+          <Heading as="h3" variant="section-title">
+            Contact Options
+          </Heading>
+          <List>
+            <ListItem>
+              <Link href="https://github.com/benni347" target="_blank">
+                <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoGithub} />}>
+                  @benni347
+                </Button>
+              </Link>
+            </ListItem>           
+            <ListItem>
+              <Link href="https://twitter.com/benni347" target="_blank">
+                <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoTwitter} />}>
+                  @benni347
+                </Button>
+              </Link>
+            </ListItem>            
+            <ListItem>
+              <Link href="mailto:cdrc+portfolio@skwar.me" target="_blank">
+                <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoMailSharp} />}>
+                  Mail
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://discord.gg/eU3MW2J" target="_blank">
+                <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoDiscord} />}>
+                  Discord
+                </Button>
+              </Link>
+            </ListItem> 
+          </List>
         </Section>
       </Container>
     </Layout>
