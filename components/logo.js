@@ -18,17 +18,19 @@ const LogoBox = styled.span`
 `
 
 const Logo = () => {
-    const footPrintImg= `/images/footprint${useColorModeValue('', '-dark')}.png`
-
-    return(
-        <Link href="/">
-            <a>
-                <LogoBox>
-                    <Image src={footPrintImg} width={20} height={20} alt="logo" />
-                    <Text color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-                    fontFamily='M Plus Rounded 1c'
-                    fontWeight="bold"
-                    ml={3}>
+    const footPrintImg = `/images/footprint${useColorModeValue('', '-dark')}.png`
+  
+    return (
+      <Link href="/">
+        <a>
+          <LogoBox>
+            <Image src={footPrintImg} width={20} height={20} alt="logo" />
+            <Text
+              color={useColorModeValue('gray.800', 'whiteAlpha.900')}
+              fontFamily='M PLUS Rounded 1c", sans-serif'
+              fontWeight="bold"
+              ml={3}
+            >
                         Cédric Skwar
                     </Text>
                 </LogoBox>
