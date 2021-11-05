@@ -86,7 +86,7 @@ const Page = () => {
             I &#10084;
           </Heading>
           <Paragraph>
-            Mathematics, Physic, Chemestry, Programming, Biking, Machine Learning, Learning new stuff
+            Mathematics, Physics, Chemistry, Programming, Biking, Machine Learning, Learning new stuff
           </Paragraph>
         </Section>
       </Container>
