@@ -22,7 +22,8 @@ import {
   IoLogoTwitter,
   IoLogoGithub,
   IoLogoDiscord,
-  IoMailSharp
+  IoMailSharp,
+  IoLogoYoutube
 } from 'react-icons/io5'
 
 
@@ -132,21 +133,21 @@ const Page = () => {
               </Link>
             </ListItem> 
           </List>
-          {/* <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem
-            href="https://www.youtube.com/devaslife"
-            title="Dev as Life"
-            thumbnail={thumbYouTube}
+          <SimpleGrid columns={[1, 2, 2]} gap={6}>
+          {/* <GridItem
+            href="https://www.youtube.com/https://www.youtube.com/channel/UCGIr66J0NLSZ6PzH-PWWSvw"
+            title="YouTube"
+            thumbnail={<Icon as={IoLogoYoutube} />}
           >
             My YouTube channel
-          </GridItem>
-          <GridItem
+          </GridItem> */}
+          {/* <GridItem
             href="https://www.inkdrop.app/"
             title="Inkdrop"
             thumbnail={thumbInkdrop}
           >
             A Markdown note-taking app
-          </GridItem>
+          </GridItem> */}
         </SimpleGrid>
 
         <Box align="center" my={4}>
@@ -155,7 +156,7 @@ const Page = () => {
               Popular posts
             </Button>
           </NextLink>
-        </Box> */}
+        </Box>
 
         </Section>
       </Container>

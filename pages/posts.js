@@ -15,7 +15,7 @@ const Posts = () => (
             </Heading>
             <Section delay={0.1}>
                 <SimpleGrid columns={[1,2,2]} gap={6}>
-                    <GridItem title="No Posts yet" thumbnail={thumbFlappyBird} href="#"></GridItem>
+                    <GridItem title="learning" thumbnail={thumbFlappyBird} href="posts/learning"></GridItem>
                 </SimpleGrid>
             </Section>
         </Container>
