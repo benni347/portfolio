@@ -12,7 +12,7 @@ const Post = () => {
                     Learning <Badge>2022</Badge>
                 </Title>
                 <P>
-                    I'm currently learning python and other programming languages.
+                    I&aposm currently learning python and other programming languages.
                 </P>
                 <List ml={4} my={4}>
                 <ListItem>
