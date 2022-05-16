@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Navbar from '../navbar.js'
 import NoSsr from '../no-ssr'
 import { Box, Container } from '@chakra-ui/react'
-import VoxelGameboy from '../voxel-gameboy'
+// import VoxelGameboy from '../voxel-gameboy'
 import Footer from '../footer'
 
 const Main = ({ children, router}) => {
@@ -17,7 +17,6 @@ const Main = ({ children, router}) => {
 
       <Container maxW="container.md" pt={14}>
         <NoSsr>
-          <VoxelGameboy />
         </NoSsr>
         {children}
 
