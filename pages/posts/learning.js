@@ -12,7 +12,7 @@ const Post = () => {
                     Learning <Badge>2022</Badge>
                 </Title>
                 <P>
-                    I&aposm currently learning python and other programming languages.
+                    I&apos;m currently learning python and other programming languages.
                 </P>
                 <List ml={4} my={4}>
                 <ListItem>
@@ -22,9 +22,13 @@ const Post = () => {
 
                 </ListItem>
                 <ListItem>
-                    <Meta>Programminglanguage</Meta>
+                    <Meta>Programminglanguages</Meta>
                     <span>Python3 and other</span>
                 </ListItem>
+                    <ListItem>
+                        <Meta>DATE</Meta>
+                        <span>2022-01-01 till 2022-04-30</span>
+                    </ListItem>
                 </List>
             </Container>
         </Layout>
