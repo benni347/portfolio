@@ -4,6 +4,7 @@ import { WorkGridItem } from '../components/grid-item'
 
 import thumbFlappyBird from '../public/images/works/flappy_bird.png'
 import thumbSnake from '../public/images/works/snake.png'
+import thumbEasyOcr from '../public/images/works/easyocr.png'
 import Layout from '../components/layouts/article'
 
 const Works = () => {
@@ -15,6 +16,11 @@ const Works = () => {
                 </Heading>
 
                 <SimpleGrid columns={[1,1,2]} gap={6}>
+                    <Section>
+                        <WorkGridItem id="easyocr" title="EasyOcr" thumbnail={thumbEasyOcr}>
+                            An Ocr implementation using python-easyocr.
+                        </WorkGridItem>
+                    </Section>
                     <Section>
                         <WorkGridItem id="flappybird-ai" title="Flappy Bird AI" thumbnail={thumbFlappyBird}>
                             A Flappy Bird clone that work with neural networks.
