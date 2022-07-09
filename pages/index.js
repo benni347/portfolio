@@ -17,13 +17,12 @@ import Paragraph from '../components/paragraph'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Layout from '../components/layouts/article'
 import { BioSection, BioYear} from '../components/bio'
-import { GridItem } from '../components/grid-item'
+// import { GridItem } from '../components/grid-item'
 import {
   IoLogoTwitter,
   IoLogoGithub,
   IoLogoDiscord,
-  IoMailSharp,
-  IoLogoYoutube
+  IoMailSharp
 } from 'react-icons/io5'
 
 
@@ -84,9 +83,15 @@ const Page = () => {
           </BioSection>
           <BioSection>
             <BioYear>
-              2010 to present
+              2019 to 2022
             </BioYear>
             Student in SAOst, Felben-Wellhausen, Frauenfeld.
+          </BioSection>
+          <BioSection>
+            <BioYear>
+              2022 to 2023
+            </BioYear>
+            Student at profil., Winterthur
           </BioSection>
         </Section>
 
