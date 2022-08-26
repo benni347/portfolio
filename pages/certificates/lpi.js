@@ -13,19 +13,12 @@ const Post = () => {
                     LPI-010-160 <Badge>July/2021</Badge>
                 </Title>
                 <P>
+                    The LPI was an easy cert to get, because the questions where easy to answer.
                 </P>
                 <List ml={4} my={4}>
                     <ListItem>
                         <Meta>Websites</Meta>
-                        <a href="https://www.codechef.com/users/benni347">Code-chef, </a>
-                    </ListItem>
-                    <ListItem>
-                        <Meta>Programminglanguages</Meta>
-                        <span>Python3</span>
-                    </ListItem>
-                    <ListItem>
-                        <Meta>DATE</Meta>
-                        <span>2022-05-01 still ongoing</span>
+                        <a href="https://www.lpi.org/our-certifications/linux-essentials-overview">LPI overview</a>
                     </ListItem>
                 </List>
             </Container>
