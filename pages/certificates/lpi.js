@@ -1,21 +1,18 @@
 import { Container, Badge, Link, List, ListItem } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Title, WorkImage, Meta } from '../../components/work'
+import { Title, WorkImage, Meta } from '../../components/cert'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
-let solutionUrl = "https://github.com/benni347/codechef_solutions"
 
 const Post = () => {
     return (
-        <Layout title="Learning">
+        <Layout title="cert">
             <Container>
                 <Title>
-                    Learning <Badge>2022</Badge>
+                    LPI-010-160 <Badge>July/2021</Badge>
                 </Title>
                 <P>
-                    I&apos;m currently learning python on code chef it&apos;s a platform which I kinda don&apos;t like to much because their solutions to some problems are wrong.
-                    I also always write up my solution you can find it here: <a href={solutionUrl}>Solutions</a>, but that are just the solutions for the problems that I already solved in python3.
                 </P>
                 <List ml={4} my={4}>
                     <ListItem>
