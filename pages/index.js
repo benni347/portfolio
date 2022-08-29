@@ -24,7 +24,6 @@ import {
     IoLogoDiscord,
     IoMailSharp
 } from 'react-icons/io5'
-import pubRsa from '../public/txt/pub_rsa.txt'
 
 
 const Page = () => {
@@ -137,6 +136,8 @@ const Page = () => {
                                     Discord
                                 </Button>
                             </Link>
+                        </ListItem>
+                        <ListItem>
                             <Link href="general/ssh" target="_blank">
                                 <Button variant="ghost" colorScheme="teal">
                                     Public SSH key
