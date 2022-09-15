@@ -20,6 +20,11 @@ const Post = () => {
                         <Meta>Websites</Meta>
                         <a href="https://www.lpi.org/our-certifications/linux-essentials-overview">LPI overview</a>
                     </ListItem>
+                    <ListItem>
+                        <Meta>Download</Meta>
+                        <a href="/public/images/certificates/lpi_essential.png">Click here to download</a>
+                        {/*:TODO: Add a download button.*/}
+                    </ListItem>
                 </List>
             </Container>
         </Layout>
