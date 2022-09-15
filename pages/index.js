@@ -77,9 +77,9 @@ const Page = () => {
           </Heading>
           <BioSection>
             <BioYear>
-              2007
+              2022 to 2023
             </BioYear>
-            Born In Winterthur, Switzerland.
+            Student at profil., Winterthur
           </BioSection>
           <BioSection>
             <BioYear>
@@ -87,11 +87,12 @@ const Page = () => {
             </BioYear>
             Student in SAOst, Felben-Wellhausen, Frauenfeld.
           </BioSection>
+
           <BioSection>
             <BioYear>
-              2022 to 2023
+              2007
             </BioYear>
-            Student at profil., Winterthur
+            Born In Winterthur, Switzerland.
           </BioSection>
         </Section>
 
