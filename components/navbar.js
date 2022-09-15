@@ -74,6 +74,9 @@ const NavBar = props => {
                 <LinkItem href="/profiles" path={path}>
                 Profiles
                 </LinkItem>
+                <LinkItem href="/certificates" path={path}>
+                    Certificates
+                </LinkItem>
                 </Stack>
 
                 <Box flex={1} align="right">
@@ -93,6 +96,9 @@ const NavBar = props => {
                                 </NextLink>
                                 <NextLink href="/profiles" passHref>
                                     <MenuItem as={Link}>Profiles</MenuItem>
+                                </NextLink>
+                                <NextLink href="/certificates" passHref>
+                                    <MenuItem as={Link}>Certificates</MenuItem>
                                 </NextLink>
                                     <MenuItem as={Link} href="https://github.com/benni347/portfolio">View Source</MenuItem>
                             </MenuList>
