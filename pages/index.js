@@ -1,43 +1,38 @@
 import NextLink from 'next/link'
 import {
-  Link,
+  Box,
+  Button,
   Container,
   Heading,
-  Box,
+  Icon,
   Image,
-  SimpleGrid,
-  Button,
+  Link,
   List,
   ListItem,
-  Icon,
+  SimpleGrid,
   useColorModeValue
 } from '@chakra-ui/react'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
-import { ChevronRightIcon } from '@chakra-ui/icons'
+import {ChevronRightIcon} from '@chakra-ui/icons'
 import Layout from '../components/layouts/article'
-import { BioSection, BioYear} from '../components/bio'
+import {BioSection, BioYear} from '../components/bio'
 // import { GridItem } from '../components/grid-item'
-import {
-  IoLogoTwitter,
-  IoLogoGithub,
-  IoLogoDiscord,
-  IoMailSharp
-} from 'react-icons/io5'
+import {IoLogoDiscord, IoLogoGithub, IoLogoTwitter, IoMailSharp} from 'react-icons/io5'
 
 
 const Page = () => {
-  return ( 
-    <Layout>
-      <Container>
-        <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={3} mb={6} align="center">
-        Hello, I&apos;m a student from Switzerland!
-        </Box>
-        <Box display={{md:'flex'}}>
-          <Box flexGrow={1}>
-            <Heading as="h2" variant="page-title">
-              Cédric Skwar
-            </Heading>
+  return (
+      <Layout>
+        <Container>
+          <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={3} mb={6} align="center">
+            Hello, I&apos;m a student from Switzerland!
+          </Box>
+          <Box display={{md: 'flex'}}>
+            <Box flexGrow={1}>
+              <Heading as="h2" variant="page-title">
+                Cédric Skwar
+              </Heading>
             <p>Developer</p>
           </Box>
           <Box
@@ -65,8 +60,8 @@ const Page = () => {
           <Paragraph>Cédric is a student and a developer from Switzerland with a passion for building digital services/stuff he wants. When not online he loves biking.
           </Paragraph>
           <Box align="center" my={4}>
-            <NextLink href="/works">
-              <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">My portfolio</Button>
+            <NextLink href="/works" legacyBehavior>
+              <Button rightIcon={<ChevronRightIcon/>} colorScheme="teal">My portfolio</Button>
             </NextLink>
           </Box>
         </Section>
@@ -157,17 +152,17 @@ const Page = () => {
         </SimpleGrid>
 
         <Box align="center" my={4}>
-          <NextLink href="/posts">
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+          <NextLink href="/posts" legacyBehavior>
+            <Button rightIcon={<ChevronRightIcon/>} colorScheme="teal">
               Popular posts
             </Button>
           </NextLink>
         </Box>
 
         </Section>
-      </Container>
-    </Layout>
-  )
+        </Container>
+      </Layout>
+  );
 }
 
 export default Page
