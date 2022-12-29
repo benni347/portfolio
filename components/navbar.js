@@ -1,20 +1,20 @@
 import Logo from './logo'
 import NextLink from 'next/link'
 import {
-    Container,
     Box,
-    Link,
-    Stack,
-    Heading,
+    Container,
     Flex,
+    Heading,
+    IconButton,
+    Link,
     Menu,
+    MenuButton,
     MenuItem,
     MenuList,
-    MenuButton,
-    IconButton,
+    Stack,
     useColorModeValue
 } from '@chakra-ui/react'
-import { HamburgerIcon } from '@chakra-ui/icons'
+import {HamburgerIcon} from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
 
 
@@ -22,19 +22,19 @@ const LinkItem = ({ href, path, children, _target, ...props }) => {
     const active = path === href
     const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
     return (
-      <NextLink href={href} passHref>
-        <Link
-          p={2}
-          bg={active ? 'grassTeal' : undefined}
-          color={active ? '#202023' : inactiveColor}
-          _target={_target}
-          {...props}
-          borderRadius="lg"
-        >
-          {children}
-        </Link>
-      </NextLink>
-    )
+        <NextLink href={href} passHref legacyBehavior>
+            <Link
+                p={2}
+                bg={active ? 'grassTeal' : undefined}
+                color={active ? '#202023' : inactiveColor}
+                _target={_target}
+                {...props}
+                borderRadius="lg"
+            >
+                {children}
+            </Link>
+        </NextLink>
+    );
 }
 
 const NavBar = props => {
@@ -85,29 +85,29 @@ const NavBar = props => {
                         <Menu>
                             <MenuButton as={IconButton} icon={<HamburgerIcon />} variant="outline" aria-label="Options" />
                             <MenuList>
-                                <NextLink href="/" passHref>
+                                <NextLink href="/" passHref legacyBehavior>
                                     <MenuItem as={Link}>About</MenuItem>
                                 </NextLink>
-                                <NextLink href="/works" passHref>
+                                <NextLink href="/works" passHref legacyBehavior>
                                     <MenuItem as={Link}>Works</MenuItem>
                                 </NextLink>
-                                <NextLink href="/posts" passHref>
+                                <NextLink href="/posts" passHref legacyBehavior>
                                     <MenuItem as={Link}>Posts</MenuItem>
                                 </NextLink>
-                                <NextLink href="/profiles" passHref>
+                                <NextLink href="/profiles" passHref legacyBehavior>
                                     <MenuItem as={Link}>Profiles</MenuItem>
                                 </NextLink>
-                                <NextLink href="/certificates" passHref>
+                                <NextLink href="/certificates" passHref legacyBehavior>
                                     <MenuItem as={Link}>Certificates</MenuItem>
                                 </NextLink>
-                                    <MenuItem as={Link} href="https://github.com/benni347/portfolio">View Source</MenuItem>
+                                <MenuItem as={Link} href="https://github.com/benni347/portfolio">View Source</MenuItem>
                             </MenuList>
                         </Menu>
                     </Box>
                 </Box>
             </Container>
         </Box>
-    )
+    );
 }
 
 export default NavBar
