@@ -9,7 +9,6 @@ export const GridItem = ({ children, href, title, thumbnail}) => (
             <Image src={thumbnail}
             alt={title}
             className="grid-item-thumbnail"
-            placeholder="blur"
             loading="lazy" />
             <LinkOverlay href={href} target="_blank">
                 <Text mt={2}>{title}</Text>
@@ -49,4 +48,3 @@ export const GridItemStyle = () => (
       `}
   />
 )
-  
