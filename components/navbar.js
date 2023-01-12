@@ -1,5 +1,5 @@
-import Logo from './logo'
-import NextLink from 'next/link'
+import Logo from "./logo";
+import NextLink from "next/link";
 import {
     Box,
     Container,
@@ -13,20 +13,19 @@ import {
     MenuList,
     Stack,
     useColorModeValue
-} from '@chakra-ui/react'
-import {HamburgerIcon} from '@chakra-ui/icons'
-import ThemeToggleButton from './theme-toggle-button'
+} from "@chakra-ui/react";
+import {HamburgerIcon} from "@chakra-ui/icons";
+import ThemeToggleButton from "./theme-toggle-button";
 
-
-const LinkItem = ({ href, path, children, _target, ...props }) => {
-    const active = path === href
-    const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
+const LinkItem = ({href, path, children, _target, ...props}) => {
+    const active = path === href;
+    const inactiveColor = useColorModeValue("gray200", "whiteAlpha.900");
     return (
         <NextLink href={href} passHref legacyBehavior>
             <Link
                 p={2}
-                bg={active ? 'grassTeal' : undefined}
-                color={active ? '#202023' : inactiveColor}
+                bg={active ? "grassTeal" : undefined}
+                color={active ? "#202023" : inactiveColor}
                 _target={_target}
                 {...props}
                 borderRadius="lg"
@@ -35,55 +34,67 @@ const LinkItem = ({ href, path, children, _target, ...props }) => {
             </Link>
         </NextLink>
     );
-}
+};
 
-const NavBar = props => {
-    const { path } = props
+const NavBar = (props) => {
+    const {path} = props;
 
     return (
         <Box
-        position="fixed"
-        as="nav"
-        w="100%"
-        bg={useColorModeValue('#ffffff40', '#20202380')}
-        style={{ backdropFilter: 'blur(10px)' }}
-        zIndex={1}
-        {...props}
+            position="fixed"
+            as="nav"
+            w="100%"
+            bg={useColorModeValue("#ffffff40", "#20202380")}
+            style={{backdropFilter: "blur(10px)"}}
+            zIndex={1}
+            {...props}
         >
-            <Container display="flex" p={2} maxW="container.md" wrap="wrap" align="center" justify="space-between">
+            <Container
+                display="flex"
+                p={2}
+                maxW="container.md"
+                wrap="wrap"
+                align="center"
+                justify="space-between"
+            >
                 <Flex align="center" mr={5}>
-                    <Heading as="h1" size="lg" letterSpacing={'tighter'}>
-                        <Logo />
+                    <Heading as="h1" size="lg" letterSpacing={"tighter"}>
+                        <Logo/>
                     </Heading>
                 </Flex>
 
                 <Stack
-                direction={{ base: 'column', md: 'row' }}
-                display={{ base: 'none', md: 'flex' }}
-                width={{ base: 'full', md: 'auto' }}
-                alignItems="center"
-                mt={{ base: 4, md: 0 }}
-                flexGrow={1}
+                    direction={{base: "column", md: "row"}}
+                    display={{base: "none", md: "flex"}}
+                    width={{base: "full", md: "auto"}}
+                    alignItems="center"
+                    mt={{base: 4, md: 0}}
+                    flexGrow={1}
                 >
-                <LinkItem href="/works" path={path}>
-                Works
-                </LinkItem>
-                <LinkItem href="/posts" path={path}>
-                Posts
-                </LinkItem>
-                <LinkItem href="/profiles" path={path}>
-                Profiles
-                </LinkItem>
-                <LinkItem href="/certificates" path={path}>
-                    Certificates
-                </LinkItem>
+                    <LinkItem href="/works" path={path}>
+                        Works
+                    </LinkItem>
+                    <LinkItem href="/posts" path={path}>
+                        Posts
+                    </LinkItem>
+                    <LinkItem href="/profiles" path={path}>
+                        Profiles
+                    </LinkItem>
+                    <LinkItem href="/certificates" path={path}>
+                        Certificates
+                    </LinkItem>
                 </Stack>
 
                 <Box flex={1} align="right">
-                    <ThemeToggleButton />
-                    <Box ml={2} display={{base: 'inline-block', md:'none'}}>
+                    <ThemeToggleButton/>
+                    <Box ml={2} display={{base: "inline-block", md: "none"}}>
                         <Menu>
-                            <MenuButton as={IconButton} icon={<HamburgerIcon />} variant="outline" aria-label="Options" />
+                            <MenuButton
+                                as={IconButton}
+                                icon={<HamburgerIcon/>}
+                                variant="outline"
+                                aria-label="Options"
+                            />
                             <MenuList>
                                 <NextLink href="/" passHref legacyBehavior>
                                     <MenuItem as={Link}>About</MenuItem>
@@ -94,13 +105,26 @@ const NavBar = props => {
                                 <NextLink href="/posts" passHref legacyBehavior>
                                     <MenuItem as={Link}>Posts</MenuItem>
                                 </NextLink>
-                                <NextLink href="/profiles" passHref legacyBehavior>
+                                <NextLink
+                                    href="/profiles"
+                                    passHref
+                                    legacyBehavior
+                                >
                                     <MenuItem as={Link}>Profiles</MenuItem>
                                 </NextLink>
-                                <NextLink href="/certificates" passHref legacyBehavior>
+                                <NextLink
+                                    href="/certificates"
+                                    passHref
+                                    legacyBehavior
+                                >
                                     <MenuItem as={Link}>Certificates</MenuItem>
                                 </NextLink>
-                                <MenuItem as={Link} href="https://github.com/benni347/portfolio">View Source</MenuItem>
+                                <MenuItem
+                                    as={Link}
+                                    href="https://github.com/benni347/portfolio"
+                                >
+                                    View Source
+                                </MenuItem>
                             </MenuList>
                         </Menu>
                     </Box>
@@ -108,6 +132,6 @@ const NavBar = props => {
             </Container>
         </Box>
     );
-}
+};
 
-export default NavBar
+export default NavBar;

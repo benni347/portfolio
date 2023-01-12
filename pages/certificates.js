@@ -16,11 +16,14 @@ const Page = () => {
                 <Heading as="h5" fontSize={16} mb={4}>
                     Current
                 </Heading>
-                <SimpleGrid columns={[1,1,2]} gap={6}>
-
+                <SimpleGrid columns={[1, 1, 2]} gap={6}>
                     <Section>
-                        <GridItem id="LPI-Cert" title="LPI-010-160 Cert" thumbnail={certLpiEssential}
-                                  href="./certificates/lpi">
+                        <GridItem
+                            id="LPI-Cert"
+                            title="LPI-010-160 Cert"
+                            thumbnail={certLpiEssential}
+                            href="./certificates/lpi"
+                        >
                             {/*:TODO: Add an option to download the image and add a description to every cert.*/}
                         </GridItem>
                     </Section>
@@ -46,7 +49,7 @@ const Page = () => {
                 </SimpleGrid>
             </Container>
         </Layout>
-    )
-}
+    );
+};
 
 export default Page
