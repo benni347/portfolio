@@ -1,12 +1,9 @@
 const options = {
-  arrowParens: 'avoid',
-  singleQuote: true,
-  bracketSpacing: true,
-  endOfLine: 'lf',
-  semi: false,
-  tabWidth: 2,
-  trailingComma: 'none'
-}
+    arrowParens: "always",
+    bracketSpacing: true,
+    endOfLine: "lf",
+    tabWidth: 4,
+    trailingComma: "none"
+};
 
-module.exports = options
-
+module.exports = options;

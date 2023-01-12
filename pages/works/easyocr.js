@@ -1,8 +1,7 @@
-import { Container, Badge, Link, List, ListItem } from '@chakra-ui/react'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Title, WorkImage, Meta } from '../../components/work'
-import P from '../../components/paragraph'
-import Layout from '../../components/layouts/article'
+import {Badge, Container, List, ListItem} from "@chakra-ui/react";
+import {Meta, Title} from "../../components/work";
+import P from "../../components/paragraph";
+import Layout from "../../components/layouts/article";
 
 const Work = () => {
     return (
@@ -11,9 +10,7 @@ const Work = () => {
                 <Title>
                     EasyOCR <Badge>2022</Badge>
                 </Title>
-                <P>
-                    An ocr implementation using python and easyocr.
-                </P>
+                <P>An ocr implementation using python and easyocr.</P>
                 <List ml={4} my={4}>
                     <ListItem>
                         <Meta>Platform</Meta>
@@ -25,16 +22,22 @@ const Work = () => {
                     </ListItem>
                     <ListItem>
                         <Meta>Pip modules</Meta>
-                        <span>easyocr, torch, torchvision, torchaudio, matplotlib</span>
+                        <span>
+                            easyocr, torch, torchvision, torchaudio, matplotlib
+                        </span>
                     </ListItem>
                     <ListItem>
                         <Meta>Github</Meta>
-                        <span><a href="https://github.com/benni347/python-easyocr">https://github.com/benni347/python-easyocr</a></span>
+                        <span>
+                            <a href="https://github.com/benni347/python-easyocr">
+                                https://github.com/benni347/python-easyocr
+                            </a>
+                        </span>
                     </ListItem>
                 </List>
             </Container>
         </Layout>
-    )
-}
+    );
+};
 
-export default Work
+export default Work;
