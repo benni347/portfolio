@@ -21,10 +21,10 @@ const Page = () => {
                 <SimpleGrid columns={[1, 1, 2]} gap={6}>
                     <Section>
                         <GridItem
-                            id="LPI-Cert"
-                            title="LPI-010-160 Cert"
-                            thumbnail={certLpiEssential}
-                            href="./certificates/lpi"
+                            id="JsAlgorithmsDataStructures-Cert"
+                            title="JavaScript Algorithms and Data Structures Cert"
+                            thumbnail={certJsAlgorithmsDataStructures}
+                            href="./certificates/jsAlgorithmsDataStructures"
                         >
                             {/*:TODO: Add an option to download the image and add a description to every cert.*/}
                         </GridItem>
@@ -41,10 +41,10 @@ const Page = () => {
                     </Section>
                     <Section>
                         <GridItem
-                            id="JsAlgorithmsDataStructures-Cert"
-                            title="JavaScript Algorithms and Data Structures Cert"
-                            thumbnail={certJsAlgorithmsDataStructures}
-                            href="./certificates/jsAlgorithmsDataStructures"
+                            id="LPI-Cert"
+                            title="LPI-010-160 Cert"
+                            thumbnail={certLpiEssential}
+                            href="./certificates/lpi"
                         >
                             {/*:TODO: Add an option to download the image and add a description to every cert.*/}
                         </GridItem>
