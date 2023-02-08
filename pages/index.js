@@ -134,21 +134,7 @@ const Page = () => {
                         </ListItem>
                         <ListItem>
                             <Link
-                                href="https://twitter.com/benni347"
-                                target="_blank"
-                            >
-                                <Button
-                                    variant="ghost"
-                                    colorScheme="teal"
-                                    leftIcon={<Icon as={IoLogoTwitter} />}
-                                >
-                                    @benni347
-                                </Button>
-                            </Link>
-                        </ListItem>
-                        <ListItem>
-                            <Link
-                                href="mailto:cdrc+portfolio@skwar.me"
+                                href="mailto:cdrc+portfolio@5y5.one"
                                 target="_blank"
                             >
                                 <Button
@@ -157,20 +143,6 @@ const Page = () => {
                                     leftIcon={<Icon as={IoMailSharp} />}
                                 >
                                     Mail
-                                </Button>
-                            </Link>
-                        </ListItem>
-                        <ListItem>
-                            <Link
-                                href="https://discord.gg/eU3MW2J"
-                                target="_blank"
-                            >
-                                <Button
-                                    variant="ghost"
-                                    colorScheme="teal"
-                                    leftIcon={<Icon as={IoLogoDiscord} />}
-                                >
-                                    Discord
                                 </Button>
                             </Link>
                         </ListItem>
