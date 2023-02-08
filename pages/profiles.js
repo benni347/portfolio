@@ -1,6 +1,14 @@
-import {Button, Container, Heading, Icon, Link, List, ListItem} from "@chakra-ui/react";
+import {
+    Button,
+    Container,
+    Heading,
+    Icon,
+    Link,
+    List,
+    ListItem
+} from "@chakra-ui/react";
 import Layout from "../components/layouts/article";
-import {IoLogoGithub, IoMailSharp} from "react-icons/io5";
+import { IoLogoGithub, IoMailSharp } from "react-icons/io5";
 // import { Icon } from '@iconify/react'
 
 // Icon sources:
@@ -30,7 +38,7 @@ const Profiles = () => (
                         <Button
                             variant="ghost"
                             colorScheme="teal"
-                            leftIcon={<Icon as={IoMailSharp}/>}
+                            leftIcon={<Icon as={IoMailSharp} />}
                         >
                             Mail
                         </Button>
@@ -47,7 +55,7 @@ const Profiles = () => (
                         <Button
                             variant="ghost"
                             colorScheme="teal"
-                            leftIcon={<Icon as={IoLogoGithub}/>}
+                            leftIcon={<Icon as={IoLogoGithub} />}
                         >
                             GitHub
                         </Button>

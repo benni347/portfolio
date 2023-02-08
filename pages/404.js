@@ -1,5 +1,12 @@
 import NextLink from "next/link";
-import {Box, Button, Container, Divider, Heading, Text} from "@chakra-ui/react";
+import {
+    Box,
+    Button,
+    Container,
+    Divider,
+    Heading,
+    Text
+} from "@chakra-ui/react";
 
 const NotFound = () => {
     return (
@@ -8,7 +15,7 @@ const NotFound = () => {
             <Text>
                 The page you&apos;re trying to access doesn&apos;t exist.
             </Text>
-            <Divider my={6}/>
+            <Divider my={6} />
 
             <Box my={6} align="center">
                 <NextLink href="/" legacyBehavior>

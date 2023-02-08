@@ -1,5 +1,5 @@
-import {Badge, Container, List, ListItem} from "@chakra-ui/react";
-import {Meta, Title} from "../../components/cert";
+import { Badge, Container, List, ListItem } from "@chakra-ui/react";
+import { Meta, Title } from "../../components/cert";
 import P from "../../components/paragraph";
 import Layout from "../../components/layouts/article";
 
@@ -11,8 +11,10 @@ const Post = () => {
                     Scientific Computing Python <Badge>February/2023</Badge>
                 </Title>
                 <P>
-                    The Scientific Computing Python required me to write five projects. The hardest part for me was the vertical text output.
-                    The second most hardest thing was right aligning the text for the exercise Arithmetic Formatter.
+                    The Scientific Computing Python required me to write five
+                    projects. The hardest part for me was the vertical text
+                    output. The second most hardest thing was right aligning the
+                    text for the exercise Arithmetic Formatter.
                 </P>
                 <List ml={4} my={4}>
                     <ListItem>

@@ -14,11 +14,16 @@ import {
 } from "@chakra-ui/react";
 import Section from "../components/section";
 import Paragraph from "../components/paragraph";
-import {ChevronRightIcon} from "@chakra-ui/icons";
+import { ChevronRightIcon } from "@chakra-ui/icons";
 import Layout from "../components/layouts/article";
-import {BioSection, BioYear} from "../components/bio";
+import { BioSection, BioYear } from "../components/bio";
 // import { GridItem } from '../components/grid-item'
-import {IoLogoDiscord, IoLogoGithub, IoLogoTwitter, IoMailSharp} from "react-icons/io5";
+import {
+    IoLogoDiscord,
+    IoLogoGithub,
+    IoLogoTwitter,
+    IoMailSharp
+} from "react-icons/io5";
 
 const Page = () => {
     return (
@@ -33,7 +38,7 @@ const Page = () => {
                 >
                     Hello, I&apos;m a student from Switzerland!
                 </Box>
-                <Box display={{md: "flex"}}>
+                <Box display={{ md: "flex" }}>
                     <Box flexGrow={1}>
                         <Heading as="h2" variant="page-title">
                             Cédric Skwar
@@ -42,8 +47,8 @@ const Page = () => {
                     </Box>
                     <Box
                         flexShrink={0}
-                        mt={{base: 4, md: 0}}
-                        ml={{md: 6}}
+                        mt={{ base: 4, md: 0 }}
+                        ml={{ md: 6 }}
                         textAlign="center"
                     >
                         <Image
@@ -70,7 +75,7 @@ const Page = () => {
                     <Box align="center" my={4}>
                         <NextLink href="/works" legacyBehavior>
                             <Button
-                                rightIcon={<ChevronRightIcon/>}
+                                rightIcon={<ChevronRightIcon />}
                                 colorScheme="teal"
                             >
                                 My portfolio
@@ -121,7 +126,7 @@ const Page = () => {
                                 <Button
                                     variant="ghost"
                                     colorScheme="teal"
-                                    leftIcon={<Icon as={IoLogoGithub}/>}
+                                    leftIcon={<Icon as={IoLogoGithub} />}
                                 >
                                     @benni347
                                 </Button>
@@ -135,7 +140,7 @@ const Page = () => {
                                 <Button
                                     variant="ghost"
                                     colorScheme="teal"
-                                    leftIcon={<Icon as={IoLogoTwitter}/>}
+                                    leftIcon={<Icon as={IoLogoTwitter} />}
                                 >
                                     @benni347
                                 </Button>
@@ -149,7 +154,7 @@ const Page = () => {
                                 <Button
                                     variant="ghost"
                                     colorScheme="teal"
-                                    leftIcon={<Icon as={IoMailSharp}/>}
+                                    leftIcon={<Icon as={IoMailSharp} />}
                                 >
                                     Mail
                                 </Button>
@@ -163,7 +168,7 @@ const Page = () => {
                                 <Button
                                     variant="ghost"
                                     colorScheme="teal"
-                                    leftIcon={<Icon as={IoLogoDiscord}/>}
+                                    leftIcon={<Icon as={IoLogoDiscord} />}
                                 >
                                     Discord
                                 </Button>
@@ -175,7 +180,7 @@ const Page = () => {
                     <Box align="center" my={4}>
                         <NextLink href="/posts" legacyBehavior>
                             <Button
-                                rightIcon={<ChevronRightIcon/>}
+                                rightIcon={<ChevronRightIcon />}
                                 colorScheme="teal"
                             >
                                 Popular posts

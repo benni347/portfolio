@@ -1,6 +1,6 @@
-import {Container, Heading, SimpleGrid} from "@chakra-ui/react";
+import { Container, Heading, SimpleGrid } from "@chakra-ui/react";
 import Section from "../components/section";
-import {WorkGridItem} from "../components/grid-item";
+import { WorkGridItem } from "../components/grid-item";
 
 import thumbFlappyBird from "../public/images/works/flappy_bird.png";
 import thumbSnake from "../public/images/works/snake.png";

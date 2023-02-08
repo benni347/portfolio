@@ -1,11 +1,11 @@
 import Head from "next/head";
 import Navbar from "../navbar.js";
 import NoSsr from "../no-ssr";
-import {Box, Container} from "@chakra-ui/react";
+import { Box, Container } from "@chakra-ui/react";
 // import VoxelGameboy from '../voxel-gameboy'
 import Footer from "../footer";
 
-const Main = ({children, router}) => {
+const Main = ({ children, router }) => {
     return (
         <Box as="main" pb={8}>
             <Head>
@@ -16,13 +16,13 @@ const Main = ({children, router}) => {
                 <title>C&eacute;dric&apos;s Portfolio</title>
             </Head>
 
-            <Navbar path={router.asPath}/>
+            <Navbar path={router.asPath} />
 
             <Container maxW="container.md" pt={14}>
                 <NoSsr></NoSsr>
                 {children}
 
-                <Footer/>
+                <Footer />
             </Container>
         </Box>
     );

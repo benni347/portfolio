@@ -14,10 +14,10 @@ import {
     Stack,
     useColorModeValue
 } from "@chakra-ui/react";
-import {HamburgerIcon} from "@chakra-ui/icons";
+import { HamburgerIcon } from "@chakra-ui/icons";
 import ThemeToggleButton from "./theme-toggle-button";
 
-const LinkItem = ({href, path, children, _target, ...props}) => {
+const LinkItem = ({ href, path, children, _target, ...props }) => {
     const active = path === href;
     const inactiveColor = useColorModeValue("gray200", "whiteAlpha.900");
     return (
@@ -37,7 +37,7 @@ const LinkItem = ({href, path, children, _target, ...props}) => {
 };
 
 const NavBar = (props) => {
-    const {path} = props;
+    const { path } = props;
 
     return (
         <Box
@@ -45,7 +45,7 @@ const NavBar = (props) => {
             as="nav"
             w="100%"
             bg={useColorModeValue("#ffffff40", "#20202380")}
-            style={{backdropFilter: "blur(10px)"}}
+            style={{ backdropFilter: "blur(10px)" }}
             zIndex={1}
             {...props}
         >
@@ -59,16 +59,16 @@ const NavBar = (props) => {
             >
                 <Flex align="center" mr={5}>
                     <Heading as="h1" size="lg" letterSpacing={"tighter"}>
-                        <Logo/>
+                        <Logo />
                     </Heading>
                 </Flex>
 
                 <Stack
-                    direction={{base: "column", md: "row"}}
-                    display={{base: "none", md: "flex"}}
-                    width={{base: "full", md: "auto"}}
+                    direction={{ base: "column", md: "row" }}
+                    display={{ base: "none", md: "flex" }}
+                    width={{ base: "full", md: "auto" }}
                     alignItems="center"
-                    mt={{base: 4, md: 0}}
+                    mt={{ base: 4, md: 0 }}
                     flexGrow={1}
                 >
                     <LinkItem href="/works" path={path}>
@@ -86,12 +86,12 @@ const NavBar = (props) => {
                 </Stack>
 
                 <Box flex={1} align="right">
-                    <ThemeToggleButton/>
-                    <Box ml={2} display={{base: "inline-block", md: "none"}}>
+                    <ThemeToggleButton />
+                    <Box ml={2} display={{ base: "inline-block", md: "none" }}>
                         <Menu>
                             <MenuButton
                                 as={IconButton}
-                                icon={<HamburgerIcon/>}
+                                icon={<HamburgerIcon />}
                                 variant="outline"
                                 aria-label="Options"
                             />

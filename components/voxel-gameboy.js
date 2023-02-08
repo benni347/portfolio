@@ -1,8 +1,8 @@
-import {useCallback, useEffect, useRef, useState} from "react";
-import {Box, Spinner} from "@chakra-ui/react";
+import { useCallback, useEffect, useRef, useState } from "react";
+import { Box, Spinner } from "@chakra-ui/react";
 import * as THREE from "three";
-import {OrbitControls} from "three/examples/jsm/controls/OrbitControls";
-import {loadGLTFModel} from "../lib/model";
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+import { loadGLTFModel } from "../lib/model";
 
 function easeOutCirc(x) {
     return Math.sqrt(1 - Math.pow(x - 1, 4));
@@ -25,7 +25,7 @@ const VoxelGameboy = () => {
     const [_controls, setControls] = useState();
 
     const handleWindowResize = useCallback(() => {
-        const {current: container} = refContainer;
+        const { current: container } = refContainer;
         if (container && renderer) {
             const scW = container.clientWidth;
             const scH = container.clientHeight;
@@ -36,7 +36,7 @@ const VoxelGameboy = () => {
 
     /* eslint-disable react-hooks/exhaustive-deps */
     useEffect(() => {
-        const {current: container} = refContainer;
+        const { current: container } = refContainer;
         if (container && !renderer) {
             const scW = container.clientWidth;
             const scH = container.clientHeight;
