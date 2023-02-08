@@ -5,7 +5,7 @@ import Layout from "../../components/layouts/article";
 
 const Post = () => {
     return (
-        <Layout title="cert">
+        <Layout title="Certificates">
             <Container>
                 <Title>
                     LPI-010-160 <Badge>July/2021</Badge>
