@@ -68,9 +68,9 @@ const Page = () => {
                         Work
                     </Heading>
                     <Paragraph>
-                        Cédric is a student and a developer from Switzerland
-                        with a passion for building digital services/stuff he
-                        wants. When not online he loves biking.
+                        As a student and developer hailing from Switzerland,
+                        I am driven by my passion for crafting digital solutions that fulfill my visions.
+                        In my free time, I enjoy exploring the great outdoors on my bike.
                     </Paragraph>
                     <Box align="center" my={4}>
                         <NextLink href="/works" legacyBehavior>
