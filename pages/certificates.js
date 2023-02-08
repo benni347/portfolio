@@ -50,13 +50,6 @@ const Page = () => {
                             </Button>
                         </Link>
                     </GridItem>
-                    <GridItem>
-                        <Link href="https://pythoninstitute.org/pcep" target="_blank">
-                            <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoPython}/>}>
-                                PCEP-30
-                            </Button>
-                        </Link>
-                    </GridItem>
                 </SimpleGrid>
             </Container>
         </Layout>
