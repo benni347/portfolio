@@ -4,6 +4,7 @@ import Layout from '../components/layouts/article'
 import {GridItem} from '../components/grid-item'
 import {IoLogoPython} from 'react-icons/io5'
 import certLpiEssential from "../public/images/certificates/lpi_essential.png";
+import certScientificComputingPython from "../public/images/certificates/scientific_computing_python_fcc.png";
 
 
 const Page = () => {
@@ -23,6 +24,16 @@ const Page = () => {
                             title="LPI-010-160 Cert"
                             thumbnail={certLpiEssential}
                             href="./certificates/lpi"
+                        >
+                            {/*:TODO: Add an option to download the image and add a description to every cert.*/}
+                        </GridItem>
+                    </Section>
+                    <Section>
+                        <GridItem
+                            id="ScientificComputingPython-Cert"
+                            title="Scientific Computing Python Cert"
+                            thumbnail={certScientificComputingPython}
+                            href="./certificates/scientificComputingPython"
                         >
                             {/*:TODO: Add an option to download the image and add a description to every cert.*/}
                         </GridItem>
