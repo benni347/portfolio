@@ -34,7 +34,7 @@ const Profiles = () => (
                     Social / Programming
                 </Heading>
                 <ListItem>
-                    <Link href="mailto:cdrc+portfolio@skwar.me" target="_blank">
+                    <Link href="mailto:cdrc+portfolio@5y5.one" target="_blank">
                         <Button
                             variant="ghost"
                             colorScheme="teal"
