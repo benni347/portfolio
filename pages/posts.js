@@ -4,6 +4,8 @@ import Section from "../components/section";
 import { GridItem } from "../components/grid-item";
 
 import thumbFlappyBird from "../public/images/works/flappy_bird.png";
+import projectUpdate1 from "../public/images/photo_2023-03-30_13-12-36.jpg";
+
 
 const Posts = () => (
     <Layout title="Posts">
@@ -13,6 +15,7 @@ const Posts = () => (
             </Heading>
             <Section delay={0.1}>
                 <SimpleGrid columns={[1, 2, 2]} gap={6}>
+                    <GridItem title ="Final Poject Update 1" thumbnail={projectUpdate1} href="posts/abschlussarbeit_update_1"></GridItem>
                     <GridItem
                         title="Abschlussarbeit"
                         thumbnail={thumbFlappyBird}

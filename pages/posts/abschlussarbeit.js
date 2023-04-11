@@ -6,10 +6,10 @@ import Layout from "../../components/layouts/article";
 
 const Post = () => {
     return (
-        <Layout title="Schule">
+        <Layout title="Final Project">
             <Container>
                 <Title>
-                    Abschlussarbeit <Badge>2023</Badge>
+                    Final Project <Badge>2023</Badge>
                 </Title>
                 <P>
 My present primary focus in school pertains to my culminating project. Said project manifests as a cross-platform, decentralized messenger prioritizing privacy and security. The user interface for the desktop variant is composed in HTML and CSS through implementation of the Wails framework.
