@@ -18,21 +18,53 @@ const Post = () => {
                     proved to be quite enlightening and informative; therefore,
                     I highly recommend it. As for my color palette for the
                     messenger, I have decided on the following hues:
-                    <List>
+                    <List ml={4} my={4}>
                         <ListItem>
-                            primary color - a deep shade of blue (#1B2C4D)
+                            <P>
+                                primary color - a deep shade of blue (
+                                <span style={{ color: "#1B2C4D" }}>
+                                    #1B2C4D
+                                </span>
+                                )
+                            </P>
                         </ListItem>
                         <ListItem>
-                            secondary color - a light blue tone (#5C80BC)
+                            <P>
+                                secondary color - a light blue tone (
+                                <span style={{ color: "#5C80BC" }}>
+                                    #5C80BC
+                                </span>
+                                )
+                            </P>
                         </ListItem>
-                        <ListItem>accent color - green (#21B372)</ListItem>
                         <ListItem>
-                            neutral color 1 - a light grey tint (#F2F2F2)
+                            <P>
+                                accent color - green (
+                                <span style={{ color: "#21B372" }}>
+                                    #21B372
+                                </span>
+                                )
+                            </P>
                         </ListItem>
                         <ListItem>
-                            neutral color 2 - a dark grey hue (#2D2D2D).
+                            <P>
+                                neutral color 1 - a light grey tint (
+                                <span style={{ color: "#F2F2F2" }}>
+                                    #F2F2F2
+                                </span>
+                                )
+                            </P>
                         </ListItem>
-                    </List>{" "}
+                        <ListItem>
+                            <P>
+                                neutral color 2 - a dark grey hue (
+                                <span style={{ color: "#2D2D2D" }}>
+                                    #2D2D2D
+                                </span>
+                                ).
+                            </P>
+                        </ListItem>
+                    </List>
                 </P>
                 <List ml={4} my={4}>
                     <ListItem>
