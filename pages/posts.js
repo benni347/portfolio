@@ -3,9 +3,9 @@ import Layout from "../components/layouts/article";
 import Section from "../components/section";
 import { GridItem } from "../components/grid-item";
 
-import thumbFlappyBird from "../public/images/works/flappy_bird.png";
-import projectUpdate1 from "../public/images/photo_2023-03-30_13-12-36.jpg";
-import projectUpdate2 from "../public/images/20230501_06h37m03s_grim.png";
+import thumbFlappyBird from "../public/images/works/flappy_bird.png.avif";
+import projectUpdate1 from "../public/images/photo_2023-03-30_13-12-36.jpg.avif";
+import projectUpdate2 from "../public/images/20230501_06h37m03s_grim.png.avif";
 
 const Posts = () => (
     <Layout title="Posts">

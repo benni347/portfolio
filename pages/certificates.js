@@ -12,9 +12,9 @@ import Section from "../components/section";
 import Layout from "../components/layouts/article";
 import { GridItem } from "../components/grid-item";
 import { IoLogoPython } from "react-icons/io5";
-import certLpiEssential from "../public/images/certificates/lpi_essential.png";
-import certJsAlgorithmsDataStructures from "../public/images/certificates/javascript_algorithms_data_structure_fcc.png";
-import certScientificComputingPython from "../public/images/certificates/scientific_computing_python_fcc.png";
+import certLpiEssential from "../public/images/certificates/lpi_essential.png.avif";
+import certJsAlgorithmsDataStructures from "../public/images/certificates/javascript_algorithms_data_structure_fcc.png.avif";
+import certScientificComputingPython from "../public/images/certificates/scientific_computing_python_fcc.png.avif";
 import { Meta } from "../components/cert";
 
 const Page = () => {
