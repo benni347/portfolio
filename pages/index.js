@@ -60,6 +60,7 @@ const Page = () => {
                             borderRadius="full"
                             src="/images/0228.jpg"
                             alt="Profile image"
+                            width={100}
                         />
                     </Box>
                 </Box>
