@@ -69,9 +69,10 @@ const Page = () => {
                         Work
                     </Heading>
                     <Paragraph>
-                        As a student and developer hailing from Switzerland,
-                        I am driven by my passion for crafting digital solutions that fulfill my visions.
-                        In my free time, I enjoy exploring the great outdoors on my bike.
+                        As a student and developer hailing from Switzerland, I
+                        am driven by my passion for crafting digital solutions
+                        that fulfill my visions. In my free time, I enjoy
+                        exploring the great outdoors on my bike.
                     </Paragraph>
                     <Box align="center" my={4}>
                         <NextLink href="/works" legacyBehavior>
