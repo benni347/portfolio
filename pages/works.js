@@ -2,9 +2,9 @@ import { Container, Heading, SimpleGrid } from "@chakra-ui/react";
 import Section from "../components/section";
 import { WorkGridItem } from "../components/grid-item";
 
-import thumbFlappyBird from "../public/images/works/flappy_bird.png";
-import thumbSnake from "../public/images/works/snake.png";
-import thumbEasyOcr from "../public/images/works/easyocr.png";
+import thumbFlappyBird from "../public/images/works/flappy_bird.png.avif";
+import thumbSnake from "../public/images/works/snake.png.avif";
+import thumbEasyOcr from "../public/images/works/easyocr.png.avif";
 import Layout from "../components/layouts/article";
 
 const Works = () => {

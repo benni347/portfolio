@@ -21,7 +21,7 @@ const Logo = () => {
     const footPrintImg = `/images/footprint${useColorModeValue(
         "",
         "-dark"
-    )}.png`;
+    )}.png.avif`;
 
     return (
         <Link href="/">

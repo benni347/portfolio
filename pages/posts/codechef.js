@@ -24,7 +24,8 @@ const Post = () => {
                     <ListItem>
                         <Meta>Websites</Meta>
                         <a href="https://www.codechef.com/users/benni347">
-                            Code-chef                        </a>
+                            Code-chef{" "}
+                        </a>
                     </ListItem>
                     <ListItem>
                         <Meta>Programminglanguages</Meta>
