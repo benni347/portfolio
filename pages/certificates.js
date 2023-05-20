@@ -21,10 +21,10 @@ const Page = () => {
     return (
         <Layout>
             <Container>
-                <Heading as="h4" fontSize={20} mb={4}>
+                <Heading as="h1" fontSize={20} mb={4}>
                     My certificates
                 </Heading>
-                <Heading as="h5" fontSize={16} mb={4}>
+                <Heading as="h2" fontSize={16} mb={4}>
                     Current
                 </Heading>
                 <SimpleGrid columns={[1, 1, 2]} gap={6}>
@@ -59,7 +59,7 @@ const Page = () => {
                         </GridItem>
                     </Section>
                 </SimpleGrid>
-                <Heading as="h5" fontSize={16} mb={4}>
+                <Heading as="h2" fontSize={16} mb={4}>
                     Work in progress
                 </Heading>
                 <List ml={4} my={4}>
