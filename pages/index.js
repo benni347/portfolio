@@ -17,11 +17,8 @@ import Paragraph from "../components/paragraph";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import Layout from "../components/layouts/article";
 import { BioSection, BioYear } from "../components/bio";
-// import { GridItem } from '../components/grid-item'
 import {
-    IoLogoDiscord,
     IoLogoGithub,
-    IoLogoTwitter,
     IoMailSharp
 } from "react-icons/io5";
 

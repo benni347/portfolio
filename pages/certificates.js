@@ -1,5 +1,4 @@
 import {
-    Button,
     Container,
     Heading,
     Icon,
@@ -45,7 +44,6 @@ const Page = () => {
                             thumbnail={certScientificComputingPython}
                             href="./certificates/scientificComputingPython"
                         >
-                            {/*:TODO: Add an option to download the image and add a description to every cert.*/}
                         </GridItem>
                     </Section>
                     <Section>
@@ -55,7 +53,6 @@ const Page = () => {
                             thumbnail={certLpiEssential}
                             href="./certificates/lpi"
                         >
-                            {/*:TODO: Add an option to download the image and add a description to every cert.*/}
                         </GridItem>
                     </Section>
                 </SimpleGrid>
