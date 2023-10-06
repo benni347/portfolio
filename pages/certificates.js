@@ -43,8 +43,7 @@ const Page = () => {
                             title="Scientific Computing Python Cert"
                             thumbnail={certScientificComputingPython}
                             href="./certificates/scientificComputingPython"
-                        >
-                        </GridItem>
+                        ></GridItem>
                     </Section>
                     <Section>
                         <GridItem
@@ -52,8 +51,7 @@ const Page = () => {
                             title="LPI-010-160 Cert"
                             thumbnail={certLpiEssential}
                             href="./certificates/lpi"
-                        >
-                        </GridItem>
+                        ></GridItem>
                     </Section>
                 </SimpleGrid>
                 <Heading as="h2" fontSize={16} mb={4}>

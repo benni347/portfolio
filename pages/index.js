@@ -17,10 +17,7 @@ import Paragraph from "../components/paragraph";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import Layout from "../components/layouts/article";
 import { BioSection, BioYear } from "../components/bio";
-import {
-    IoLogoGithub,
-    IoMailSharp
-} from "react-icons/io5";
+import { IoLogoGithub, IoMailSharp } from "react-icons/io5";
 
 const Page = () => {
     return (
@@ -87,6 +84,22 @@ const Page = () => {
                     <Heading as="h3" variant="section-title">
                         Bio
                     </Heading>
+                    <BioSection>
+                        <BioYear>2023 to 2027</BioYear>
+                        Apprentice at{" "}
+                        <Link href="https://eyevip.com/" target="_blank">
+                            eyevip
+                        </Link>
+                        , as software engineer EFZ
+                    </BioSection>
+                    <BioSection>
+                        <BioYear>2023 to 2027</BioYear>
+                        Student at{" "}
+                        <Link href="https://www.bbw.ch/" target="_blank">
+                            BBW
+                        </Link>
+                        , BMS
+                    </BioSection>
                     <BioSection>
                         <BioYear>2022 to 2023</BioYear>
                         Student at profil., Winterthur
