@@ -23,6 +23,13 @@ const Post = () => {
                             Certificate Link + Overview
                         </a>
                     </ListItem>
+                    <ListItem>
+                        <Meta>Download</Meta>
+                        <DownloadLink
+                            imageName="scientific_computing_python.avif"
+                            downloadText="Download Certificate"
+                        />
+                    </ListItem>
                 </List>
             </Container>
         </Layout>

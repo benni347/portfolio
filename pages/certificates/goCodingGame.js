@@ -25,6 +25,13 @@ const Post = () => {
                             To verify the cert
                         </a>
                     </ListItem>
+                    <ListItem>
+                        <Meta>Download</Meta>
+                        <DownloadLink
+                            imageName="go_coding_game_cert.avif"
+                            downloadText="Download Certificate"
+                        />
+                    </ListItem>
                 </List>
             </Container>
         </Layout>

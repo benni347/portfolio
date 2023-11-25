@@ -21,6 +21,13 @@ const Post = () => {
                             LPI overview
                         </a>
                     </ListItem>
+                    <ListItem>
+                        <Meta>Download</Meta>
+                        <DownloadLink
+                            imageName="lpi_cert.avif"
+                            downloadText="Download Certificate"
+                        />
+                    </ListItem>
                 </List>
             </Container>
         </Layout>
