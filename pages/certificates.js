@@ -15,6 +15,7 @@ import certLpiEssential from "../public/images/certificates/lpi_essential.png.av
 import certJsAlgorithmsDataStructures from "../public/images/certificates/javascript_algorithms_data_structure_fcc.png.avif";
 import certScientificComputingPython from "../public/images/certificates/scientific_computing_python_fcc.png.avif";
 import certGoCodingGame from "../public/images/certificates/go_coding_game_cert.avif.avif";
+import certPythonCodingGame from "../public/images/certificates/python_coding_game.avif";
 import { Meta } from "../components/cert";
 
 const Page = () => {
@@ -28,6 +29,14 @@ const Page = () => {
                     Current
                 </Heading>
                 <SimpleGrid columns={[1, 1, 2]} gap={6}>
+                    <Section>
+                        <GridItem
+                            id="PythonCodingGame-Cert"
+                            title="Python3 Coding Game Cert"
+                            thumbnail={certPythonCodingGame}
+                            href="./certificates/pythonCodingGame"
+                        />
+                    </Section>
                     <Section>
                         <GridItem
                             id="GoCodingGame-Cert"
@@ -52,7 +61,7 @@ const Page = () => {
                             title="Scientific Computing Python Cert"
                             thumbnail={certScientificComputingPython}
                             href="./certificates/scientificComputingPython"
-                        ></GridItem>
+                        />
                     </Section>
                     <Section>
                         <GridItem
@@ -60,7 +69,7 @@ const Page = () => {
                             title="LPI-010-160 Cert"
                             thumbnail={certLpiEssential}
                             href="./certificates/lpi"
-                        ></GridItem>
+                        />
                     </Section>
                 </SimpleGrid>
                 <Heading as="h2" fontSize={16} mb={4}>
