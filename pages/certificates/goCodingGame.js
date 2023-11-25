@@ -2,6 +2,7 @@ import { Badge, Container, List, ListItem } from "@chakra-ui/react";
 import { Meta, Title } from "../../components/cert";
 import P from "../../components/paragraph";
 import Layout from "../../components/layouts/article";
+import DownloadLink from "../../components/download-button";
 
 const Post = () => {
     return (
