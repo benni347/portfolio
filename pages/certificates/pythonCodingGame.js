@@ -2,6 +2,7 @@ import { Badge, Container, List, ListItem, Link} from "@chakra-ui/react";
 import { Meta, Title } from "../../components/cert";
 import P from "../../components/paragraph";
 import Layout from "../../components/layouts/article";
+import DownloadLink from "../../components/download-button";
 
 const Post = () => {
     return (
@@ -19,6 +20,10 @@ const Post = () => {
                         <Link href="https://www.codingame.com/certification/kIfzRVEzqEh0nxkHTl_O2Q">
                             Certificate on Codingame
                         </Link>
+                    </ListItem>
+                    <ListItem>
+                        <Meta>Download</Meta>
+                        <DownloadLink imageName="python_coding_game.avif" downloadText="Download Certificate" />
                     </ListItem>
                 </List>
             </Container>
