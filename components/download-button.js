@@ -31,7 +31,7 @@ function DownloadLink({ imageName, downloadText = 'Download', ...props }) {
         window.URL.revokeObjectURL(downloadUrl);
       }
     };
-  }, [imageName]);
+  }, [imageName, downloadUrl]);
 
   const linkStyle = {
     color: colorMode === 'light' ? "#3d7aed" : "#ff63c3",
