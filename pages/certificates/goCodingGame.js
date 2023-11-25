@@ -11,7 +11,12 @@ const Post = () => {
                     go Coding Game <Badge>November/2023</Badge>
                 </Title>
                 <P>
-                    Overall, I found the exam straightforward to ace, achieving a perfect score. Nonetheless, a few questions necessitated a moment of contemplation prior to coding the solutions. Despite this, the allotted time was more than sufficient. Personally, I would consider reducing the time by 5-10 minutes, but overall, the certification exam was reasonable.
+                    Overall, I found the exam straightforward to ace, achieving
+                    a perfect score. Nonetheless, a few questions necessitated a
+                    moment of contemplation prior to coding the solutions.
+                    Despite this, the allotted time was more than sufficient.
+                    Personally, I would consider reducing the time by 5-10
+                    minutes, but overall, the certification exam was reasonable.
                 </P>
                 <List ml={4} my={4}>
                     <ListItem>
