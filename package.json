@@ -1,6 +1,6 @@
 {
     "name": "portfolio",
-    "version": "1.1.4",
+    "version": "1.1.5",
     "description": "Cedrics Portfolio",
     "scripts": {
         "dev": "next dev -H 0.0.0.0",
@@ -10,7 +10,7 @@
         "start": "next start"
     },
     "keywords": [],
-    "author": "Cedric Skwar <cdrc+portfolio@skwar.me>",
+    "author": "Cedric Skwar <cdrc@5y5.one>",
     "license": "MIT",
     "dependencies": {
         "@chakra-ui/icons": "^2.0.2",

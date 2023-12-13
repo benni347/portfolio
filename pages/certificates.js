@@ -14,8 +14,8 @@ import { IoLogoPython } from "react-icons/io5";
 import certLpiEssential from "../public/images/certificates/lpi_essential.png.avif";
 import certJsAlgorithmsDataStructures from "../public/images/certificates/javascript_algorithms_data_structure_fcc.png.avif";
 import certScientificComputingPython from "../public/images/certificates/scientific_computing_python_fcc.png.avif";
-import certGoCodingGame from "../public/images/certificates/go_coding_game_cert.avif.avif";
-import certPythonCodingGame from "../public/images/certificates/python_coding_game.avif";
+import certGoCodingGame from "../public/images/certificates/go_coding_game_cert.png";
+import certPythonCodingGame from "../public/images/certificates/python_coding_game.png";
 import { Meta } from "../components/cert";
 
 const Page = () => {

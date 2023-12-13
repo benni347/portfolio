@@ -2,7 +2,7 @@
 FROM node:16 AS build
 WORKDIR /usr/src/app
 
-# Copy package files
+# Copy package files for better caching
 COPY package*.json ./
 
 # Install dependencies including devDependencies
@@ -11,7 +11,7 @@ RUN npm install
 # Copy the rest of the code
 COPY . .
 
-# Build the application (if you have a build process)
+# Build the application
 RUN npm run build
 
 # Remove devDependencies to reduce image size
@@ -21,22 +21,26 @@ RUN npm prune --production
 FROM node:16-slim AS runtime
 WORKDIR /usr/src/app
 
-# Create a non-root user and switch to it
-RUN useradd -m appuser
-USER appuser
-
-# Copy package files and install only production dependencies
+# Copy package files
 COPY --from=build /usr/src/app/package*.json ./
 
-# Copy only the built application from the build stage
-COPY --from=build /usr/src/app/dist ./dist  # replace 'dist' with your build output directory, if different
+# Install only production dependencies
+# (You can skip this if all necessary dependencies are already in node_modules)
+RUN npm install --only=production
 
-# Expose the port
+# Copy the built application from the build stage
+COPY --from=build /usr/src/app/.next ./.next
+# Copy the public folder
+COPY --from=build /usr/src/app/public ./public
+# If you have other directories to copy, add them here
+
+# Expose the port the app runs on
 EXPOSE 3000
 
-# Health check (adjust the command according to your app's health check endpoint)
+# Health check
 HEALTHCHECK --interval=30s --timeout=30s --start-period=5s --retries=3 \
   CMD curl -f http://localhost:3000/api/health || exit 1
 
 # Run the application
 CMD ["npm", "run", "start"]
+
