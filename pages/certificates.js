@@ -17,6 +17,7 @@ import certScientificComputingPython from "../public/images/certificates/scienti
 import certGoCodingGame from "../public/images/certificates/go_coding_game_cert.png";
 import certPythonCodingGame from "../public/images/certificates/python_coding_game.png";
 import certPythonBasicHackerrank from "../public/images/certificates/python_basic_hackerrank.avif.png";
+import certSoftwareEngineer from "../public/images/certificates/software_engineer.png";
 import { Meta } from "../components/cert";
 
 const Page = () => {
@@ -30,6 +31,14 @@ const Page = () => {
                     Current
                 </Heading>
                 <SimpleGrid columns={[1, 1, 2]} gap={6}>
+                    <Section>
+                        <GridItem
+                            id="HackerrankSoftwareEngineer-Cert"
+                            title="Hackerrank software engineer"
+                            thumbnail={certSoftwareEngineer}
+                            href="./certificates/softwareEngineer"
+                        />
+                    </Section>
                     <Section>
                         <GridItem
                             id="PythonCodingGame-Cert"
