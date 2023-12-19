@@ -16,6 +16,7 @@ import certJsAlgorithmsDataStructures from "../public/images/certificates/javasc
 import certScientificComputingPython from "../public/images/certificates/scientific_computing_python_fcc.png.avif";
 import certGoCodingGame from "../public/images/certificates/go_coding_game_cert.png";
 import certPythonCodingGame from "../public/images/certificates/python_coding_game.png";
+import certPythonBasicHackerrank from "../public/images/certificates/python_basic_hackerrank.avif";
 import { Meta } from "../components/cert";
 
 const Page = () => {
@@ -43,6 +44,14 @@ const Page = () => {
                             title="golang Coding Game Cert"
                             thumbnail={certGoCodingGame}
                             href="./certificates/goCodingGame"
+                        />
+                    </Section>
+                    <Section>
+                        <GridItem
+                            id="PythonBasicHackerrank-Cert"
+                            title="Python Basic Hackerrank Cert"
+                            thumbnail={certPythonBasicHackerrank}
+                            href="./certificates/pythonBasicHackerrank"
                         />
                     </Section>
                     <Section>
