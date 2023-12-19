@@ -16,7 +16,7 @@ import certJsAlgorithmsDataStructures from "../public/images/certificates/javasc
 import certScientificComputingPython from "../public/images/certificates/scientific_computing_python_fcc.png.avif";
 import certGoCodingGame from "../public/images/certificates/go_coding_game_cert.png";
 import certPythonCodingGame from "../public/images/certificates/python_coding_game.png";
-import certPythonBasicHackerrank from "../public/images/certificates/python_basic_hackerrank.avif";
+import certPythonBasicHackerrank from "../public/images/certificates/python_basic_hackerrank.avif.png";
 import { Meta } from "../components/cert";
 
 const Page = () => {

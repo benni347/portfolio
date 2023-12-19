@@ -25,7 +25,7 @@ const Post = () => {
                     <ListItem>
                         <Meta>Download</Meta>
                         <DownloadLink
-                            imageName="python_basic_hackerrank.avif"
+                            imageName="python_basic_hackerrank.avif.png"
                             downloadText="Download Certificate"
                         />
                     </ListItem>
