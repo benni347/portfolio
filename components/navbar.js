@@ -1,137 +1,129 @@
 import Logo from "./logo";
 import NextLink from "next/link";
 import {
-    Box,
-    Container,
-    Flex,
-    Heading,
-    IconButton,
-    Link,
-    Menu,
-    MenuButton,
-    MenuItem,
-    MenuList,
-    Stack,
-    useColorModeValue
+  Box,
+  Container,
+  Flex,
+  Heading,
+  IconButton,
+  Link,
+  Menu,
+  MenuButton,
+  MenuItem,
+  MenuList,
+  Stack,
+  useColorModeValue,
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import ThemeToggleButton from "./theme-toggle-button";
 
 const LinkItem = ({ href, path, children, _target, ...props }) => {
-    const active = path === href;
-    const inactiveColor = useColorModeValue("gray200", "whiteAlpha.900");
-    return (
-        <NextLink href={href} passHref legacyBehavior>
-            <Link
-                p={2}
-                bg={active ? "grassTeal" : undefined}
-                color={active ? "#202023" : inactiveColor}
-                _target={_target}
-                {...props}
-                borderRadius="lg"
-            >
-                {children}
-            </Link>
-        </NextLink>
-    );
+  const active = path === href;
+  const inactiveColor = useColorModeValue("gray200", "whiteAlpha.900");
+  return (
+    <NextLink href={href} passHref legacyBehavior>
+      <Link
+        p={2}
+        bg={active ? "grassTeal" : undefined}
+        color={active ? "#202023" : inactiveColor}
+        _target={_target}
+        {...props}
+        borderRadius="lg"
+      >
+        {children}
+      </Link>
+    </NextLink>
+  );
 };
 
 const NavBar = (props) => {
-    const { path } = props;
+  const { path } = props;
 
-    return (
-        <Box
-            position="fixed"
-            as="nav"
-            w="100%"
-            bg={useColorModeValue("#ffffff40", "#20202380")}
-            style={{ backdropFilter: "blur(10px)" }}
-            zIndex={1}
-            {...props}
+  return (
+    <Box
+      position="fixed"
+      as="nav"
+      w="100%"
+      bg={useColorModeValue("#ffffff40", "#20202380")}
+      style={{ backdropFilter: "blur(10px)" }}
+      zIndex={1}
+      {...props}
+    >
+      <Container
+        display="flex"
+        p={2}
+        maxW="container.md"
+        wrap="wrap"
+        align="center"
+        justify="space-between"
+      >
+        <Flex align="center" mr={5}>
+          <Heading as="h1" size="lg" letterSpacing={"tighter"}>
+            <Logo />
+          </Heading>
+        </Flex>
+
+        <Stack
+          direction={{ base: "column", md: "row" }}
+          display={{ base: "none", md: "flex" }}
+          width={{ base: "full", md: "auto" }}
+          alignItems="center"
+          mt={{ base: 4, md: 0 }}
+          flexGrow={1}
         >
-            <Container
-                display="flex"
-                p={2}
-                maxW="container.md"
-                wrap="wrap"
-                align="center"
-                justify="space-between"
-            >
-                <Flex align="center" mr={5}>
-                    <Heading as="h1" size="lg" letterSpacing={"tighter"}>
-                        <Logo />
-                    </Heading>
-                </Flex>
+          <LinkItem href="/works" path={path}>
+            Works
+          </LinkItem>
+          <LinkItem href="/posts" path={path}>
+            Posts
+          </LinkItem>
+          <LinkItem href="/profiles" path={path}>
+            Profiles
+          </LinkItem>
+          <LinkItem href="/certificates" path={path}>
+            Certificates
+          </LinkItem>
+        </Stack>
 
-                <Stack
-                    direction={{ base: "column", md: "row" }}
-                    display={{ base: "none", md: "flex" }}
-                    width={{ base: "full", md: "auto" }}
-                    alignItems="center"
-                    mt={{ base: 4, md: 0 }}
-                    flexGrow={1}
+        <Box flex={1} align="right">
+          <ThemeToggleButton />
+          <Box ml={2} display={{ base: "inline-block", md: "none" }}>
+            <Menu>
+              <MenuButton
+                as={IconButton}
+                icon={<HamburgerIcon />}
+                variant="outline"
+                aria-label="Options"
+              />
+              <MenuList>
+                <NextLink href="/" passHref legacyBehavior>
+                  <MenuItem as={Link}>About</MenuItem>
+                </NextLink>
+                <NextLink href="/works" passHref legacyBehavior>
+                  <MenuItem as={Link}>Works</MenuItem>
+                </NextLink>
+                <NextLink href="/posts" passHref legacyBehavior>
+                  <MenuItem as={Link}>Posts</MenuItem>
+                </NextLink>
+                <NextLink href="/profiles" passHref legacyBehavior>
+                  <MenuItem as={Link}>Profiles</MenuItem>
+                </NextLink>
+                <NextLink href="/certificates" passHref legacyBehavior>
+                  <MenuItem as={Link}>Certificates</MenuItem>
+                </NextLink>
+                <MenuItem
+                  as={Link}
+                  href="https://github.com/benni347/portfolio"
                 >
-                    <LinkItem href="/works" path={path}>
-                        Works
-                    </LinkItem>
-                    <LinkItem href="/posts" path={path}>
-                        Posts
-                    </LinkItem>
-                    <LinkItem href="/profiles" path={path}>
-                        Profiles
-                    </LinkItem>
-                    <LinkItem href="/certificates" path={path}>
-                        Certificates
-                    </LinkItem>
-                </Stack>
-
-                <Box flex={1} align="right">
-                    <ThemeToggleButton />
-                    <Box ml={2} display={{ base: "inline-block", md: "none" }}>
-                        <Menu>
-                            <MenuButton
-                                as={IconButton}
-                                icon={<HamburgerIcon />}
-                                variant="outline"
-                                aria-label="Options"
-                            />
-                            <MenuList>
-                                <NextLink href="/" passHref legacyBehavior>
-                                    <MenuItem as={Link}>About</MenuItem>
-                                </NextLink>
-                                <NextLink href="/works" passHref legacyBehavior>
-                                    <MenuItem as={Link}>Works</MenuItem>
-                                </NextLink>
-                                <NextLink href="/posts" passHref legacyBehavior>
-                                    <MenuItem as={Link}>Posts</MenuItem>
-                                </NextLink>
-                                <NextLink
-                                    href="/profiles"
-                                    passHref
-                                    legacyBehavior
-                                >
-                                    <MenuItem as={Link}>Profiles</MenuItem>
-                                </NextLink>
-                                <NextLink
-                                    href="/certificates"
-                                    passHref
-                                    legacyBehavior
-                                >
-                                    <MenuItem as={Link}>Certificates</MenuItem>
-                                </NextLink>
-                                <MenuItem
-                                    as={Link}
-                                    href="https://github.com/benni347/portfolio"
-                                >
-                                    View Source
-                                </MenuItem>
-                            </MenuList>
-                        </Menu>
-                    </Box>
-                </Box>
-            </Container>
+                  View Source
+                </MenuItem>
+              </MenuList>
+            </Menu>
+          </Box>
         </Box>
-    );
+      </Container>
+    </Box>
+  );
 };
 
 export default NavBar;
