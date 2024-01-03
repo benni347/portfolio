@@ -159,7 +159,7 @@ const Page = () => {
                             </Link>
                         </ListItem>
                     </List>
-                    <SimpleGrid columns={[1, 2, 2]} gap={6}></SimpleGrid>
+                    <SimpleGrid columns={[1, 2, 2]} gap={6} />
 
                     <Box align="center" my={4}>
                         <NextLink href="/posts" legacyBehavior>
