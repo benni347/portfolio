@@ -9,7 +9,7 @@ const Website = ({ Component, pageProps, router }) => {
         <ChakraProvider theme={theme}>
             <Fonts />
             <Layout router={router}>
-                <AnimatePresence mode="wait" initial={true}>
+                <AnimatePresence mode="wait" initial>
                     <Component {...pageProps} key={router.route} />
                 </AnimatePresence>
             </Layout>
