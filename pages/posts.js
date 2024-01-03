@@ -19,34 +19,34 @@ const Posts = () => (
                         title="Final Poject Update 2"
                         thumbnail={projectUpdate2}
                         href="posts/abschlussarbeit_update_2"
-                    ></GridItem>
+                     />
                     <GridItem
                         title="Final Poject Update 1"
                         thumbnail={projectUpdate1}
                         href="posts/abschlussarbeit_update_1"
-                    ></GridItem>
+                     />
                     <GridItem
                         title="Abschlussarbeit"
                         thumbnail={thumbFlappyBird}
                         href="posts/abschlussarbeit"
-                    ></GridItem>
+                     />
                     <GridItem
                         title="CodeChef"
                         thumbnail={thumbFlappyBird}
                         href="posts/codechef"
-                    ></GridItem>
+                     />
 
                     <GridItem
                         title="CodeChef"
                         thumbnail={thumbFlappyBird}
                         href="posts/codechef"
-                    ></GridItem>
+                     />
 
                     <GridItem
                         title="learning"
                         thumbnail={thumbFlappyBird}
                         href="posts/learning"
-                    ></GridItem>
+                     />
                 </SimpleGrid>
             </Section>
         </Container>

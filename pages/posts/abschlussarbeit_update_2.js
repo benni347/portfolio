@@ -18,7 +18,7 @@ const Post = () => {
                     elusive despite my efforts to employ print statements
                     ubiquitously, which have proven futile.
                 </P>
-                <br></br>
+                <br />
                 <P>
                     Utilizing WebRTC data channels would facilitate message
                     transmission, while simultaneously enabling the effortless
