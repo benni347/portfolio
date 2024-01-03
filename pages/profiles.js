@@ -9,7 +9,7 @@ import {
 } from "@chakra-ui/react";
 import Layout from "../components/layouts/article";
 import { IoLogoGithub, IoMailSharp } from "react-icons/io5";
-import { SiHackerearth } from "react-icons/si";
+import { SiHackerearth, SiCodeforces } from "react-icons/si";
 // import { Icon } from '@iconify/react'
 
 // Icon sources:
@@ -65,6 +65,20 @@ const Profiles = () => (
                 <Heading as="h5" fontSize={17} mb={4}>
                     Learning
                 </Heading>
+                <ListItem>
+                    <Link
+                        href="https://codeforces.com/profile/benni347"
+                        target="_blank"
+                    >
+                        <Button
+                            variant="ghost"
+                            colorScheme="teal"
+                            leftIcon={<Icon as={SiCodeforces} />}
+                        >
+                            Codeforces
+                        </Button>
+                    </Link>
+                </ListItem>
                 <ListItem>
                     <Link
                         href="https://www.hackerearth.com/@benni347"
