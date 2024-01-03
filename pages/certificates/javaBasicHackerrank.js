@@ -9,20 +9,25 @@ const Post = () => {
         <Layout title="Certificates">
             <Container>
                 <Title>
-                    Software Engineer <Badge>December/2023</Badge>
+                    Java Basic <Badge>December/2023</Badge>
                 </Title>
-                <P>I wanted more certs.</P>
+                <P>
+                    I needed to use Java for my school projects, so I thought
+                    acquiring a certification in it could be beneficial.
+                    However, I would have preferred the certification to be in a
+                    more recent version of Java, rather than Java 7 or 8.
+                </P>
                 <List ml={4} my={4}>
                     <ListItem>
                         <Meta>Websites</Meta>
-                        <Link href="https://www.hackerrank.com/certificates/dbd09cd3f174">
+                        <Link href="https://www.hackerrank.com/certificates/c8511ae167ed">
                             Validate Certificate
                         </Link>
                     </ListItem>
                     <ListItem>
                         <Meta>Download</Meta>
                         <DownloadLink
-                            imageName="software_engineer.png"
+                            imageName="java_basic_hackerrank.avif"
                             downloadText="Download Certificate"
                         />
                     </ListItem>
