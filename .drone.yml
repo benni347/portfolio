@@ -16,8 +16,6 @@ steps:
       settings:
           registry: ${REGISTRY}
           repo: ${REGISTRY}/${IMAGE_NAME}
-          tags:
-              - latest # or use a dynamic tag based on event or metadata
           auto_tag: true
           dockerfile: ./build/Dockerfile
           username:
