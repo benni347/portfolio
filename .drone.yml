@@ -11,11 +11,6 @@ platform:
 environment:
     IMAGE_NAME: ${DRONE_REPO}
 steps:
-    - name: checkout
-      image: alpine/git
-      commands:
-          - git clone --depth=1 https://github.com/${DRONE_REPO}.git .
-          - git checkout ${DRONE_COMMIT}
     - name: log in to the Container registry
       image: docker
       commands:
