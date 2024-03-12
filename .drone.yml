@@ -15,11 +15,10 @@ steps:
       image: plugins/docker
       settings:
           registry: ${REGISTRY}
-          repo: ${REGISTRY}/${IMAGE_NAME}
+          repo: benni347/portfolio
           auto_tag: true
           dockerfile: ./build/Dockerfile
-          username:
-              from_secret: docker_username
+          username: benni347
           password:
               from_secret: docker_password
       when:
