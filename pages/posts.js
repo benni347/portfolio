@@ -16,6 +16,11 @@ const Posts = () => (
             <Section delay={0.1}>
                 <SimpleGrid columns={[1, 2, 2]} gap={6}>
                     <GridItem
+                        title="&uuml;K 187"
+                        thumbnail={projectUpdate2}
+                        href="posts/uek_187"
+                    />
+                    <GridItem
                         title="Final Poject Update 2"
                         thumbnail={projectUpdate2}
                         href="posts/abschlussarbeit_update_2"
