@@ -22,7 +22,7 @@ steps:
           - docker login -u ${DRONE_REPO_OWNER} -p ${DRONE_REPO_PRIVATE_TOKEN} ${REGISTRY}
       environment:
           DRONE_REPO_PRIVATE_TOKEN:
-              from_secret: github_token
+              from_secret: docker_password
     - name: build and push Docker image
       image: plugins/docker
       settings:
